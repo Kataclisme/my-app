@@ -1,0 +1,178 @@
+div.background {
+    background: rgb(254,213,16);
+background: linear-gradient(0deg, rgba(254,213,16,1) 0%, rgba(255,255,255,1) 50%);
+    width: 8.5em;
+}
+
+
+.container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 10px; 
+}
+
+
+  .teachers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+  }
+
+  ul.teacher{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    list-style-type: none;
+    width: 22em;
+    align-items: center;
+  }
+  
+  .teacher {
+    width: 22em; 
+    border-radius: 2em;
+    overflow: visible;
+;
+
+  }
+
+  div.card-t {
+    -webkit-box-shadow: 0px 11px 26px 4px rgba(189,189,189,0.4); 
+    box-shadow: 0px 11px 26px 4px rgba(189,189,189,0.4);
+    height: 7em;
+    border-radius: 1em;
+  }
+  
+  .teacher:not(:last-child) {
+    margin-right: 2em; 
+  }
+  
+  .teacher .name {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 20em;
+    padding: 0.5em;
+  }
+  
+  .teacher .name .firstname{
+    font-weight: bold;
+    margin-left: 0.5em;
+  }
+  .teacher .name .lastname {
+    font-weight: bold;
+    margin-left: 0.3em;
+  }
+
+  .teacher .assignment {
+    text-align: center;
+    margin-left: auto;
+    width: 8em;
+    border-radius: 3em;
+    color: white;
+    font-size: 0.8em;
+  }
+  
+  .teacher .information {
+    width: 12em;
+    font-size: 1em;
+    padding-left: 1em;
+  }
+  
+  
+  .teacher .description {
+    margin-bottom: 10px;
+  }
+  
+  .teacher .arrivaldate {
+    font-size: 12px;
+    color: #484848;
+  }
+
+  div.card-s {
+    -webkit-box-shadow: 0px 11px 26px 4px rgba(189,189,189,0.4); 
+    box-shadow: 0px 11px 26px 4px rgba(189,189,189,0.4);
+    border-radius: 1em;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .students {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        grid-gap: 1em; 
+        list-style-type: none; 
+    
+  }
+
+  ul.student {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 1.8em; 
+    list-style-type: none; 
+  }
+
+  
+  
+  table.student {
+    display: flex;
+    flex-direction: column;
+    width: 40em; 
+    border-radius: 2em;
+    overflow: visible;
+  }
+  
+  .student .name {
+        padding-left: 1em;
+        display: flex;
+        flex-direction: row;
+        width: 20em;
+        padding: 0.5em;
+      
+  }
+  
+  .student .name .firstname{
+    font-weight: bold;
+    margin-left: 0.5em;
+  }
+  .student .name .lastname {
+    font-weight: bold;
+    margin-left: 0.3em;
+  }
+  
+  .student .information {
+    width: 12em;
+    height: 7em;
+    font-size: 1em;
+    padding-left: 1em;
+  }
+  
+  .student .grade {
+    padding: 5px;
+    text-align: center;
+    background-color: #87ceeb; 
+  }
+  
+  .student .description {
+    margin-bottom: 10px;
+    width: 13em;
+  }
+  
+  .student .startdate {
+    font-size: 12px;
+    color: #484848;
+  }
+
+  .student .house {
+    text-align: center;
+    margin-left: auto;
+    width: 8em;
+    height: 1.3em;
+    border-radius: 3em;
+    color: white;
+    font-size: 0.8em;
+  }
+  
